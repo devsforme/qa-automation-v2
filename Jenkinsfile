@@ -16,7 +16,8 @@ pipeline {
 
         stage('Run tests') {
             steps {
-                bat 'pytest --junitxml=reports/junit-report.xml'
+                // Добавляем -s, чтобы print() выводился в консоль
+                bat 'pytest -s --junitxml=reports/junit-report.xml'
             }
         }
     }
