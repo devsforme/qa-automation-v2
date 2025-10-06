@@ -14,12 +14,12 @@ pipeline {
             }
         }
 
-        stage('Run tests') {
-            steps {
-                // Добавляем -s, чтобы print() выводился в консоль
-                bat 'pytest -s --junitxml=reports/junit-report.xml'
-            }
-        }
+stage('Run tests') {
+    steps {
+        bat 'pytest -s test_sample.py --junitxml=reports/junit-report.xml'
+    }
+}
+
     }
 
     post {
