@@ -10,7 +10,7 @@ pipeline {
         
         stage('Install dependencies') {
             steps {
-                bat 'C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2032.0_x64__qbz5n2kfra8p0\Lib\site-packages\pip install -r requirements.txt'
+                bat 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.13_3.13.2032.0_x64__qbz5n2kfra8p0\\Lib\\site-packages\\pip install -r requirements.txt'
             }
         }
 
