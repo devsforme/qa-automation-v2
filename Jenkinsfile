@@ -8,6 +8,13 @@ pipeline {
             }
         }
 
+stage('Check files') {
+    steps {
+        bat 'dir /s /b'   // для Windows
+        // или sh 'ls -R' для Linux
+    }
+}
+        
         stage('Install dependencies') {
             steps {
                 bat 'pip install -r requirements.txt'
