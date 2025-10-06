@@ -7,13 +7,6 @@ pipeline {
                 git 'https://github.com/devsforme/qa-automation-v2.git'
             }
         }
-
-stage('Check files') {
-    steps {
-        bat 'dir /s /b'   // для Windows
-        // или sh 'ls -R' для Linux
-    }
-}
         
         stage('Install dependencies') {
             steps {
