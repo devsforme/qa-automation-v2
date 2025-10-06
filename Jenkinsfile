@@ -16,7 +16,7 @@ stage('Install dependencies') {
 
 stage('Run tests') {
     steps {
-       bat '"C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Roaming\\Python\\Python313\\Scripts\\pytest.exe" -s test_sample.py --junitxml=reports/junit-report.xml'
+       bat '"C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Roaming\\Python\\Python313\\Scripts\\pytest.exe" --junitxml=reports/junit-report.xml'
     }
 }
 
